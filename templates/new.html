@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar {
+            text-align: center;
+            width: 100px;
+
+        }
+
+        .a {
+            color: rgb(254, 253, 253);
+            padding: 3px;
+            padding-left: 35px;
+            font-size: 25px;
+            text-decoration: none;
+
+        }
+
+        .nav_image {
+            height: 230px;
+            width: 700px;
+            margin-left: 400px;
+        }
+
+        .navbar_a {
+            width: 1500px;
+            height: 50px;
+            background-color:#000000;
+            text-align: left;
+            color:000f;
+            text-decoration: none;
+
+        }
+
+        .col-1 {
+         background-color: rgb(254, 119, 1);
+            height: 50px;
+            width: 480px;
+            padding-top: 20px;
+            margin-left: 20px;
+            margin-bottom: 30px;
+            text-decoration: none;
+        }
+
+        .col-2{
+            color:black;
+             margin-right: 10px; 
+             font-family: 'Times New Roman', Times, serif; 
+             font-size: 20px;
+             margin-left:20px; 
+             font-family:cursive; 
+             text-decoration: none;
+        }
+
+        .col-3{
+            margin-top:50px; 
+            margin-left:250px; 
+            height: 200px; 
+            width: 300px;
+            list-style-type: none;
+        }
+
+        .col-4{
+            margin-left: 400px; 
+            margin-top: 50px; 
+            font-size: 60px;
+            width: 1000px;
+        
+        }
+
+        .col-foot-12 {
+            width: 1500px;
+            border: none;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px 8px;
+            border-radius: 6px;
+
+        }
+
+        .col-foot-img {
+            padding-left: 100px;
+            margin-left: 220px;
+        }
+
+div .col-21{
+    background-color:rgb(46, 139, 87);
+    height: 50px;
+    width: 480px;
+    padding-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    text-decoration: none;
+}
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <img src="{{ url_for('static',filename = 'image/PIET logo with tagline.jpg')}}" class="nav_image">
+        <br>
+        <div class="navbar_a">
+            <a href="/index" class="a">HOME</a>
+        </div>
+    </nav>
+
+    <p class="col-4">Mini project of Summer internship</p>
+
+    <table class="col-3" >
+        <tr>
+            <th>
+                <li>
+                    <div class="col-1"><a href="https://titanic-surviv.herokuapp.com/"
+                            class="col-2">Titanic_Survival</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="col-1"><a
+                            href="https://natural-learning-process.herokuapp.com/"
+                            class="col-2">Natural Language Process
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="col-1"><a href="https://placement-prediction-analysis.herokuapp.com/"
+                        class="col-2">Placemnet_prediction_models</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="col-1"><a href="https://churning-mall-customers.herokuapp.com/"
+                        class="col-2">Churn Modelling using Different Models</a>
+                    </div>
+                </li>
+            </th>
+            <th>
+                <li>
+                    <div class="col-1"><a
+                            href="https://divymuradia-svm-model-app-yd34cm.streamlitapp.com/"
+                            class="col-2">Item
+                            Purchase Prediction</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="col-1">
+                        <a href="https://house-price-pridict.herokuapp.com/"class="col-2">House Price Analysis
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="col-1"><a
+                            href=" https://divymuradia-natural-language-processing-app-5t50jt.streamlitapp.com/"
+                            class="col-2">Resturant Rewiew Analyses</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="col-1"><a href=" https://cluster-kmeans.herokuapp.com/ "class="col-2">K Means clustering
+                        </a>
+                    </div>
+                </li>
+            </th>
+        </tr>
+    </table>
+
+<div style="width:1500px">
+<img src="{{ url_for('static',filename = 'image/ezgif.com-gif-maker (1).gif')}}" style="width:1500px; height:200px;">
+</div>
+<div>
+    <div class="col-foot-12">
+        <hr>
+        <center>
+            <h3 class="section-title" style="text-align: center; font-size: 40px;">Sponsored by</h3>
+        </center>
+        <div class="col-foot-img">
+            <table class="col-foot-img">
+                <tr>
+                    <th> <img style="max-height:80px;" src="{{ url_for('static',filename = 'image/AICTEIdeaLabFooterLogo.png')  }}"></th>
+                    <th> <img style="max-height:80px;" src="{{ url_for('static',filename = 'image/nbanew.png')  }}"></th>
+                </tr>
+            </table>
+
+        </div>
+        <br><br><br><br><br>
+        <div class="fixed-bottom ">
+            <div class="" style="min-height: 40px;">
+                <div style="background-color: rgb(254, 119, 1);">
+                    <marquee style="color:rgb(251, 250, 250); margin-top: 7px;">
+                        <h9>Department of Computer Engineering, PIET</h9>
+                    </marquee>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

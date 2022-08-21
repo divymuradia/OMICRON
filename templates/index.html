@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Internship Project</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <title>Machine Learning Lab</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+
+        }
+
+        h2,
+        h4 {
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            color: rgb(4, 9, 56);
+
+        }
+
+        p {
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 5px;
+            color: rgb(4, 9, 56);
+            font-size: 20px;
+            font-style: italic;
+            text-decoration: double;
+        }
+
+        .button {
+            width: 200px;
+            margin-top: 15px;
+        }
+
+        .navbar {
+            text-align: center;
+            width: 100px;
+
+        }
+
+        .a {
+            color: rgb(254, 253, 253);
+            padding: 3px;
+            padding-left: 35px;
+            font-size: 25px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+
+        .nav_image {
+            height: 230px;
+            width: 700px;
+            margin-left: 400px;
+        }
+
+        .navbar_a {
+            width: 1500px;
+            height: 50px;
+            background-color: rgb(184, 7, 7);
+
+        }
+
+        .col-1 {
+            width: 1500px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .col-2 {
+            width: 1500px;
+        }
+
+        .col-3 {
+            text-align: left;
+            height: 300px;
+        }
+
+        .col-4 {
+            font-family: 'Times New Roman', Times, serif;
+            text-align: justify;
+            margin-right: 50px;
+        }
+
+        .col-5 {
+            margin-left: 160px;
+            font-size: 30px;
+        }
+
+        .col-6 {
+            width: 1500px;
+        }
+
+        
+
+        .col-7 {
+            padding: 0px;
+            width: 800px;
+            height: 700px;
+            padding: 30px;
+        }
+
+        .col-8 {
+            text-align: left;
+            font-size: 20px;
+
+        }
+
+        .col-9 {
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+            width: 600px;
+        }
+
+        .col-10 {
+            list-style-type: none;
+        }
+
+        .col-11 {
+            color: rgb(5, 4, 4);
+            margin-left: 20px;
+            margin-top: 20px;
+            width: 450px;
+            height: 30px;
+        }
+
+        .form-label {
+            margin-left: 20px;
+            color: rgb(2, 2, 2);
+        }
+
+        .form-select {
+            border-radius:6px;
+            width: 450px;
+            margin-left: 20px;
+            margin-top: 10px;
+            padding: 5px;
+            border-style: solid;
+            background-color: rgb(25, 223, 223);
+            border-color: rgb(15, 104, 221);
+        }
+
+        .col-foot-12 {
+            width: 1500px;
+            
+        }
+
+        .col-foot-img {
+            padding-left: 100px;
+            margin-left: 220px;
+        }
+
+
+        @media only screen and (min-width:300px) and (max-width:2000px) {
+
+            .navbar {
+                display: block;
+            }
+
+            .a {
+                display: block;
+            }
+
+            .nav_image {
+                display: block;
+            }
+
+            .navbar_a {
+                display: flex;
+            }
+
+            .row::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+
+
+            [class*="col-"] {
+                float: left;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <img src="{{ url_for('static',filename = 'image/PIET logo with tagline.jpg')}}" class="nav_image">
+        <br>
+        <div class="navbar_a">
+            <a href="/aboutusnew" class="a">ABOUT US</a>
+            <a href="/new" class="a">MINI PROJECTS</a>
+        </div>
+    </nav>
+
+    <div class="col-1">
+        <div style="margin-top:30px;">
+            <h2 style="font-size: 40px;">
+                Summer Internship Project
+            </h2>
+            <p style="font-size: 30px;">
+                This project based on  prediction with all classification models
+            </p>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-2">
+
+                <table class="col-2">
+                    <tr>
+                        <th>
+                            <p style="font-size:60px;">Omicron Sentiment Analysis</p>
+                            <table>
+                                <tr>
+                                    <th>
+                                        <div class="col-3">
+                                            <img src="{{ url_for('static',filename = 'image/twitter-png.gif')}}" class="col-3">
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div class="col-4">
+                                            <p class="col-4">Twitter is a miniature writing for a blog site which gives phase to individuals to share as 
+                                                well as communicate their perspectives about point, activities, items plus other medicinal harms. 
+                                                Tweets can be arranged keen on assorted classes reliant on their significance through the tip looked. 
+                                                NLP for wellbeing linked exploration be at present utilize in combination of tweet keen on positive as well 
+                                                as negative classes reliant on their approach utilizing normal language handling strategy. This paper contain 
+                                                execution of NLP (Bag of words) for message alliance reliant on twitter omicron tweet informational catalog 
+                                                utilizing sentiment preparing information utilizing twitter statistics set as well as suggest a plan to further 
+                                                expand categorization.
+
+                                            
+                                                
+                                                </p>
+                                        </div>
+
+                                    </th>
+                                </tr>
+                            </table>
+
+
+
+
+                            <br><br>
+
+                            <p class="col-5">
+                                Omicron Sentiment Analysis Text reacts to filling the form below with
+                                appropriate details we get statement review.</b> </p>
+
+
+                            <br><br><br><br>
+                            <br><br><br><br>
+                            <hr>
+
+                        </th>
+
+                    </tr>
+
+
+                    <tr class="col-6">
+                        <th>
+
+                            <table class="col-7">
+                                <tr>
+                                    <th>
+                                        <form action="{{ url_for('predict')}} " method="get" class="col-9">
+
+                                            <div>
+                                                <p style="font-size:40px;">Write Text</p>
+                                            </div>
+
+                                        
+
+
+
+                                            <table class="col-11">
+                                                <th>
+                                                <br>
+                                                    <li>
+
+                                                        
+                                                        <div class="col-12" style="color: #FFF;">
+                                                            <label for="text" class="form-label"><h4>Write Text </h4></label>
+                                                            <input type="text" class="form-control" id="text" name="text" step="any" required="required" placeholder="Enter the Tweets">
+                                                        </div><br><br><br><br><br><br>
+
+                                                    </li>
+                                                    <br>
+                                                    <li>
+
+                                                        <div class="col-md-4" style="color: #FFF;">
+                                                            <label for="inputState" class="form-label">Choose a Model</label>
+                                                            <select id="Model" name ="Model" step = "any" class="form-select" required>
+                                            
+                                                                <option selected>Naive Bayes Classifier</option>
+
+                                                            
+                                                                
+                                            
+                                                                <option >KNN Classifer</option>
+                                                            
+                                                                 
+                                            
+                                                                <option>RANdom Forest Classifer</option>
+                                                            </select>
+                                                            <div>
+
+                                                        <button type="submit" class="btn btn-primary btn-block btn-large">Predict  </button>
+                                                    </div>
+
+
+
+                                                       
+                                                </th>
+                                        </form>
+                                    </th>
+                                </tr>
+                            </table>
+                            
+                            <div >
+                                
+                                <p style="color:rgb(4, 4, 4);">
+                                    
+                                    {{prediction_text}}
+                                    
+                                </p>
+                            </div>
+                        </th>
+                    </tr>
+                </table>
+
+
+                <br><br><br><br><br><br><br>
+                </th>
+                </tr>
+
+                </table>
+            </div>
+
+        </div>
+        <br>
+
+    </div>
+
+
+    <div class="col-foot-12">
+        <hr>
+        <center>
+            <h3 class="section-title" style="text-align: center; font-size: 40px;">Sponsored by</h3>
+        </center>
+        <div class="col-foot-img">
+            <table class="col-foot-img">
+                <tr>
+                    <th> <img style="max-height:80px;" src="{{ url_for('static',filename = 'image/AICTEIdeaLabFooterLogo.png')  }}"></th>
+                    <th> <img style="max-height:80px;" src="{{ url_for('static',filename = 'image/nbanew.png')  }}"></th>
+                </tr>
+            </table>
+
+        </div>
+        <br><br><br><br><br>
+        <div class="fixed-bottom ">
+            <div class="" style="min-height: 40px;">
+                <div style="background-color:rgb(150, 2, 2);">
+                    <marquee style="color:rgb(251, 250, 250); margin-top: 7px;">
+                        <h9>Developed by Department of Computer Engineering, PIET</h9>
+                    </marquee>
+                </div>
+            </div>
+        </div>
+        <!-- change later-->
+        <script src="{{ url_for('static',filename = 'js/bootstrap.bundle.min.js')  }}"></script>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+            crossorigin="anonymous"></script>
+
+</body>
+
+</html>
